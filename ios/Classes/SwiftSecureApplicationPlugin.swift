@@ -36,8 +36,15 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                 // 3
                 let blurView = UIVisualEffectView(effect: blurEffect)
                 // 4
+                let imageName = "../Assets/cuenca_icon.png"
+                let image = UIImage(named: imageName)
+                let imageView = UIImageView(image: image!)
+
+                imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
+                view.addSubview(imageView)
+
                 blurView.frame = view.bounds
-                view.addSubview(blurView)
+                //view.addSubview(blurView)
                 window.addSubview(view)
                 window.bringSubviewToFront(view)
             }
