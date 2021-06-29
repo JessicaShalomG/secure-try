@@ -39,7 +39,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                  gradient.colors = [color.cgColor, to.cgColor]
                  gradient.locations = [0.0 , 1.0]
                  gradient.startPoint = CGPoint(x : 0.0, y : 0)
-                 gradient.endPoint = CGPoint(x :0.0, y: 0.15) // you need to play with 0.15 to adjust gradient vertically
+                 gradient.endPoint = CGPoint(x :0.0, y: 5) // you need to play with 0.15 to adjust gradient vertically
                  gradient.frame = view.bounds
 
                  view.layer.insertSublayer(gradient, at: 0)
