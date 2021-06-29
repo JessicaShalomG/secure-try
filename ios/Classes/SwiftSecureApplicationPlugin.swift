@@ -45,16 +45,17 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                  view.layer.insertSublayer(gradient, at: 0)
 
 
-                 let yourLabel = UILabel(frame: CGRect(x: 80, y: 200, width: 100, height: 300))
-                   yourLabel.textColor = UIColor(white: 1, alpha: 1)
-                   yourLabel.font = UIFont(name: "Roboto-Regular", size: 90)
+                 let yourLabel = UILabel(frame: CGRect(x: 80, y: 250, width: 100, height: 500))
+                   yourLabel.textColor = UIColor(red: 0.51, green: 0.56, blue: 0.73, alpha: 1.00)
+                   yourLabel.font = UIFont(name: "Roboto-Regular", size: 50)
+                    yourLabel.numberOfLines = 5
                    //yourLabel.text = "CUENCA LA ÚNICA CUENTA QUE NECESITAS"
 
                 let paragraphStyle = NSMutableParagraphStyle()
-                let stringValue = "CUENCA LA ÚNICA CUENTA QUE NECESITAS"
+                let stringValue = "CUENCA\nLA ÚNICA CUENTA\nlQUE NECESITAS"
 
                 let attributedString = NSMutableAttributedString(string: stringValue)
-                paragraphStyle.lineSpacing = 2 // Whatever line spacing you want in points
+                paragraphStyle.lineSpacing = 10 // Whatever line spacing you want in points
                 attributedString.addAttribute(.paragraphStyle, value:paragraphStyle, range: NSRange(location: 0, length: stringValue.count))
                 yourLabel.attributedText = attributedString;
 
