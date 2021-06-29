@@ -39,7 +39,6 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
 
 
                   let gradientLayer:CAGradientLayer = CAGradientLayer()
-                  gradientLayer.frame.size = self.view.frame.size
                   gradientLayer.colors =
                   [UIColor(red: 0.24, green: 0.29, blue: 0.46, alpha: 1.00),
                   UIColor(red: 0.07, green: 0.11, blue: 0.26, alpha: 1.00)]
@@ -48,9 +47,9 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
 
 
                  let yourLabel = UILabel(frame: CGRect(x: 100, y: 200, width: 130, height: 400))
-                   yourLabel.textColor = UIColor whiteColor
+                   yourLabel.textColor = UIColor(white: 1, alpha: opacity)
                    yourLabel.numberOfLines = 4
-                   yourLabel.textAlignment= UITextAlignmentCenter
+                   yourLabel.textAlignment = NSTextAlignmentCenter;
 
                    yourLabel.text = "CUENCA LA ÚNICA CUENTA QUE NECESITAS"
 
