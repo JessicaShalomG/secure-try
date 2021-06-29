@@ -30,7 +30,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                 let view = UIView(frame: window.frame)
                 view.tag = 99699
                 // 1
-                view.backgroundColor = UIColor(red: 0.33, green: 0.00, blue: 0.92, alpha: 1.00);
+                //view.backgroundColor = UIColor(red: 0.33, green: 0.00, blue: 0.92, alpha: 1.00);
                 // 2
                 //let blurEffect = UIBlurEffect(style: .extraLight)
                 // 3
@@ -43,13 +43,13 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                   [UIColor(red: 0.24, green: 0.29, blue: 0.46, alpha: 1.00),
                   UIColor(red: 0.07, green: 0.11, blue: 0.26, alpha: 1.00)]
                   //Use diffrent colors
-                  //view.layer.addSublayer(gradientLayer)
+                  view.layer.addSublayer(gradientLayer)
 
 
                  let yourLabel = UILabel(frame: CGRect(x: 100, y: 200, width: 130, height: 400))
                    yourLabel.textColor = UIColor(white: 1, alpha: opacity)
                    yourLabel.numberOfLines = 4
-                   yourLabel.textAlignment = .Center
+                   yourLabel.textAlignment = UITextAlignmentCenter
 
                    yourLabel.text = "CUENCA LA ÚNICA CUENTA QUE NECESITAS"
 
