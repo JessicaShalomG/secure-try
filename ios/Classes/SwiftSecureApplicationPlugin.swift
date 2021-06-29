@@ -29,21 +29,17 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
             } else {
                 let view = UIView(frame: window.frame)
                 view.tag = 99699
-                // 1
-               // view.backgroundColor = UIColor(red: 0.33, green: 0.00, blue: 0.92, alpha: 1.00);
-                // 2
-                //let blurEffect = UIBlurEffect(style: .extraLight)
-                // 3
-               // let blurView = UIVisualEffectView(effect: blurEffect)
-                // 4
 
 
                  let gradient: CAGradientLayer = CAGradientLayer()
 
-                 gradient.colors = [UIColor.black.cgColor, UIColor.blue.cgColor]
+                 let to = UIColor(red: 0.07, green: 0.11, blue: 0.26, alpha: 1.00)
+                 let color = UIColor(red: 0.24, green: 0.29, blue: 0.46, alpha: 1.00)
+
+                 gradient.colors = [color.cgColor, to.cgColor]
                  gradient.locations = [0.0 , 1.0]
                  gradient.startPoint = CGPoint(x : 0.0, y : 0)
-                 gradient.endPoint = CGPoint(x :0.0, y: 0.5) // you need to play with 0.15 to adjust gradient vertically
+                 gradient.endPoint = CGPoint(x :0.0, y: 0.15) // you need to play with 0.15 to adjust gradient vertically
                  gradient.frame = view.bounds
 
                  view.layer.insertSublayer(gradient, at: 0)
