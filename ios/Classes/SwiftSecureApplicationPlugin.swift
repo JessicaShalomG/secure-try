@@ -30,7 +30,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                 let view = UIView(frame: window.frame)
                 view.tag = 99699
                 // 1
-                view.backgroundColor =  [UIColor(red: 0.86, green: 0.24, blue: 0.00, alpha: 1.00)];
+                view.backgroundColor = UIColor(red: 0.86, green: 0.24, blue: 0.00, alpha: 1.00);
                 // 2
                 let blurEffect = UIBlurEffect(style: .extraLight)
                 // 3
