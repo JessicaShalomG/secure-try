@@ -46,8 +46,9 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                  gradient.endPoint = CGPoint(x :0.0, y: 0.5) // you need to play with 0.15 to adjust gradient vertically
                  gradient.frame = view.bounds
 
-                 view.layer.addSublayer(gradient)
-                 window.addSublayer(gradient)
+                 view.layer.insertSublayer(gradient, at: 0)
+                 //view.backgroundColor = UIColor(red: 0.33, green: 0.00, blue: 0.92, alpha: 1.00);
+
 
 
                  let yourLabel = UILabel(frame: CGRect(x: 100, y: 200, width: 130, height: 400))
