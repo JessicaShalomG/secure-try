@@ -34,7 +34,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                 // 2
                 //let blurEffect = UIBlurEffect(style: .extraLight)
                 // 3
-                let blurView = UIVisualEffectView(effect: blurEffect)
+               // let blurView = UIVisualEffectView(effect: blurEffect)
                 // 4
                 let imageName = "cuenca_icon.png"
                 let image = UIImage(named: imageName)
