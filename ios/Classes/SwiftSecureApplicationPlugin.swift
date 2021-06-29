@@ -47,11 +47,11 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
 
                  let yourLabel = UILabel(frame: CGRect(x: 80, y: 200, width: 100, height: 300))
                    yourLabel.textColor = UIColor(white: 1, alpha: 1)
-                   yourLabel.font = UIFont(name: "Roboto-Regular", size: 50)
+                   yourLabel.font = UIFont(name: "Roboto-Regular", size: 90)
                    //yourLabel.text = "CUENCA LA ÚNICA CUENTA QUE NECESITAS"
 
                 let paragraphStyle = NSMutableParagraphStyle()
-                let stringValue = "CUENCA\nLA ÚNICA CUENTA\nlQUE NECESITAS"
+                let stringValue = "CUENCA LA ÚNICA CUENTA QUE NECESITAS"
 
                 let attributedString = NSMutableAttributedString(string: stringValue)
                 paragraphStyle.lineSpacing = 2 // Whatever line spacing you want in points
