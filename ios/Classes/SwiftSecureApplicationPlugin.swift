@@ -49,7 +49,6 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                  let yourLabel = UILabel(frame: CGRect(x: 100, y: 200, width: 130, height: 400))
                    yourLabel.textColor = UIColor(white: 1, alpha: opacity)
                    yourLabel.numberOfLines = 4
-                   yourLabel.textAlignment = UITextAlignmentCenter
 
                    yourLabel.text = "CUENCA LA ÚNICA CUENTA QUE NECESITAS"
 
