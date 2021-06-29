@@ -24,6 +24,9 @@
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -43,6 +46,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="90" y="75" key="#Project_Structure" timestamp="1625010823617">
+      <screen x="0" y="25" width="1680" height="940" />
+    </state>
+    <state x="90" y="75" key="#Project_Structure/0.25.1680.940@0.25.1680.940" timestamp="1625010823617" />
     <state x="582" y="265" width="602" height="490" key="find.popup" timestamp="1624977600901">
       <screen x="0" y="25" width="1920" height="970" />
     </state>
