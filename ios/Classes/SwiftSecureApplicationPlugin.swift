@@ -47,8 +47,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
 
                  let yourLabel = UILabel(frame: CGRect(x: 80, y: 250, width: 100, height: 500))
                    yourLabel.textColor = UIColor(white: 1, alpha: 1)
-                   yourLabel.lineHeightMultiple =  CGFloat = 2.0;
-                   yourLabel.font = UIFont(name: "Roboto-Regular", size: 50)
+                   yourLabel.font = UIFont(name: "Roboto-Regular", size: 50, lineHeightMultiple: 0.5)
                    yourLabel.text = "CUENCA LA ÚNICA CUENTA QUE NECESITAS"
 
 
