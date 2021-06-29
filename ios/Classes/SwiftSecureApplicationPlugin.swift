@@ -36,18 +36,15 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                 // 3
                // let blurView = UIVisualEffectView(effect: blurEffect)
                 // 4
-                let imageName = "cuenca_icon.png"
-                let image = UIImage(named: imageName)
-                let imageView = UIImageView(image: image!)
 
                  let yourLabel = UILabel(frame: CGRect(x: 100, y: 200, width: 200, height: 200))
                    yourLabel.textColor = UIColor(white: 1, alpha: opacity)
                    yourLabel.numberOfLines = 3
-               
+
                    yourLabel.text = "CUENCALA ÚNICA CUENTA QUE NECESITAS"
 
 
-                imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
+
 
                 view.addSubview(yourLabel)
 
