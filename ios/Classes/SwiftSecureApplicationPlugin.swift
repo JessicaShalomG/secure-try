@@ -38,13 +38,14 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                 // 4
 
 
-                  let gradientLayer:CAGradientLayer = CAGradientLayer()
-                  gradientLayer.colors =
-                  [UIColor(red: 0.24, green: 0.29, blue: 0.46, alpha: 1.00),
-                  UIColor(red: 0.07, green: 0.11, blue: 0.26, alpha: 1.00)]
-                  //Use diffrent colors
-                  window.layer.addSublayer(gradientLayer)
-                   //view.backgroundColor = gradientLayer;
+                 let gradient: CAGradientLayer = CAGradientLayer()
+
+                 gradient.colors = [UIColor.black.cgColor, UIColor.blue.cgColor]
+                 gradient.locations = [0.0 , 1.0]
+                 gradient.startPoint = CGPoint(x : 0.0, y : 0)
+                 gradient.endPoint = CGPoint(x :0.0, y: 0.5) // you need to play with 0.15 to adjust gradient vertically
+                 gradient.frame = view.bounds
+                 view.layer.addSublayer(gradient)
 
 
                  let yourLabel = UILabel(frame: CGRect(x: 100, y: 200, width: 130, height: 400))
