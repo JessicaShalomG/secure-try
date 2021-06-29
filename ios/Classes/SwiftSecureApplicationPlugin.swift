@@ -45,11 +45,13 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                  gradient.startPoint = CGPoint(x : 0.0, y : 0)
                  gradient.endPoint = CGPoint(x :0.0, y: 0.5) // you need to play with 0.15 to adjust gradient vertically
                  gradient.frame = view.bounds
+
                  view.layer.addSublayer(gradient)
+                 window.addSublayer(gradient)
 
 
                  let yourLabel = UILabel(frame: CGRect(x: 100, y: 200, width: 130, height: 400))
-                   yourLabel.textColor = UIColor(white: 1, alpha: opacity)
+                   yourLabel.textColor = UIColor(white: 1, alpha: 1)
                    yourLabel.numberOfLines = 5
                    yourLabel.text = "CUENCA LA ÚNICA CUENTA QUE NECESITAS"
 
