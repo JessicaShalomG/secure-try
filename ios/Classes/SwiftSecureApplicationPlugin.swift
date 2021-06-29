@@ -39,13 +39,13 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                  gradient.colors = [color.cgColor, to.cgColor]
                  gradient.locations = [0.0 , 1.0]
                  gradient.startPoint = CGPoint(x : 0.0, y : 0)
-                 gradient.endPoint = CGPoint(x :0.0, y: 0.90) // you need to play with 0.15 to adjust gradient vertically
+                 gradient.endPoint = CGPoint(x :0.0, y: 0.90)
                  gradient.frame = view.bounds
 
                  view.layer.insertSublayer(gradient, at: 0)
-                 //view.backgroundColor = UIColor(red: 0.33, green: 0.00, blue: 0.92, alpha: 1.00);
 
-                 let yourLabel = UILabel(frame: CGRect(x: 80, y: 250, width: 100, height: 500))
+
+                 let yourLabel = UILabel(frame: CGRect(x: 80, y: 200, width: 100, height: 300))
                    yourLabel.textColor = UIColor(white: 1, alpha: 1)
                    yourLabel.font = UIFont(name: "Roboto-Regular", size: 50)
                    //yourLabel.text = "CUENCA LA ÚNICA CUENTA QUE NECESITAS"
@@ -54,7 +54,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                 let stringValue = "CUENCA\nLA ÚNICA CUENTA\nlQUE NECESITAS"
 
                 let attributedString = NSMutableAttributedString(string: stringValue)
-                paragraphStyle.lineSpacing = 30 // Whatever line spacing you want in points
+                paragraphStyle.lineSpacing = 2 // Whatever line spacing you want in points
                 attributedString.addAttribute(.paragraphStyle, value:paragraphStyle, range: NSRange(location: 0, length: stringValue.count))
                 yourLabel.attributedText = attributedString;
 
