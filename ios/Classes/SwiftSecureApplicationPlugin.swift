@@ -54,7 +54,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                 let stringValue = "CUENCA\nLA ÚNICA CUENTA\nlQUE NECESITAS"
                 let attributedString = NSMutableAttributedString(string: stringValue)
                 paragraphStyle.lineSpacing = 30 // Whatever line spacing you want in points
-                attributedString.addAttribute(.paragraphStyle, value:paragraphStyle, range: NSRange(location: 0, length: length))
+                attributedString.addAttribute(.paragraphStyle, value:paragraphStyle)
                 yourLabel.attributedText = attributedString;
 
 
