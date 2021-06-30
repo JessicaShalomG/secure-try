@@ -58,10 +58,11 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
 
                 attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "Roboto-Medium", size: 30.0), range: NSRange(location: 0, length: stringValue.count))
 
+                attributedString.addAttribute(NSAttributedString.Key.kern, value: Double = 1.15, range: NSRange(location: 0, length: stringValue.count))
+
                 attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor(red: 0.00, green: 0.71, blue: 0.68, alpha: 1.00), range: NSRange(location:9,length:6))
 
-                paragraphStyle.lineSpacing = 5 // Whatever line spacing you want in points 
-                paragraphStyle.letterSpacing = 2
+                paragraphStyle.lineSpacing = 5 // Whatever line spacing you want in points
                 attributedString.addAttribute(.paragraphStyle, value:paragraphStyle, range: NSRange(location: 0, length: stringValue.count))
                 yourLabel.attributedText = attributedString;
 
