@@ -31,7 +31,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                 view.tag = 99699
 
 
-                var image : UIImage = UIImage(named:"AppIcon")!
+                var image : UIImage = UIImage(named:"splash")!
                 let bgImage = UIImageView(image: image)
                 //bgImage.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
 
