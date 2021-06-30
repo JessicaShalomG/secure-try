@@ -30,8 +30,15 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                 let view = UIView(frame: window.frame)
                 view.tag = 99699
 
+                let imageName = "yourImage.png"
+                let image = UIImage(named: imageName)
+                let imageView = UIImageView(image: image!)
 
-                 let gradient: CAGradientLayer = CAGradientLayer()
+                imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
+                view.addSubview(imageView)
+
+
+                /* let gradient: CAGradientLayer = CAGradientLayer()
 
                  let to = UIColor(red: 0.07, green: 0.11, blue: 0.26, alpha: 1.00)
                  let color = UIColor(red: 0.24, green: 0.29, blue: 0.46, alpha: 1.00)
@@ -56,8 +63,6 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
 
                 let attributedString = NSMutableAttributedString(string: stringValue)
 
-                //attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "Roboto-Regular", size: 30), range: NSRange(location: 0, length: stringValue.count))
-
                 attributedString.addAttribute(NSAttributedString.Key.kern, value: 1.15, range: NSRange(location: 0, length: stringValue.count))
 
                 attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor(red: 0.00, green: 0.71, blue: 0.68, alpha: 1.00), range: NSRange(location:9,length:6))
@@ -67,7 +72,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                 yourLabel.attributedText = attributedString;
 
 
-                view.addSubview(yourLabel)
+                view.addSubview(yourLabel)*/
 
                 window.addSubview(view)
                 window.bringSubviewToFront(view)
