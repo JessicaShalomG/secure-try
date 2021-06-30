@@ -45,7 +45,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                  view.layer.insertSublayer(gradient, at: 0)
 
 
-                 let yourLabel = UILabel(frame: CGRect(x: 80, y: 200, width: 200, height: 500))
+                 let yourLabel = UILabel(frame: CGRect(x: 80, y: 200, width: 400, height: 500))
                    yourLabel.textColor = UIColor(red: 0.51, green: 0.56, blue: 0.73, alpha: 1.00)
                   // yourLabel.font = UIFont(name: "Roboto-Bold", size: 100)
                     yourLabel.numberOfLines = 3
@@ -56,11 +56,12 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
 
                 let attributedString = NSMutableAttributedString(string: stringValue)
 
-                attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "Georgia", size: 30.0), range: NSRange(location: 0, length: stringValue.count))
+                attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "Roboto-Medium", size: 30.0), range: NSRange(location: 0, length: stringValue.count))
 
                 attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor(red: 0.00, green: 0.71, blue: 0.68, alpha: 1.00), range: NSRange(location:9,length:6))
 
-                paragraphStyle.lineSpacing = 5 // Whatever line spacing you want in points
+                paragraphStyle.lineSpacing = 5 // Whatever line spacing you want in points 
+                paragraphStyle.letterSpacing = 2
                 attributedString.addAttribute(.paragraphStyle, value:paragraphStyle, range: NSRange(location: 0, length: stringValue.count))
                 yourLabel.attributedText = attributedString;
 
