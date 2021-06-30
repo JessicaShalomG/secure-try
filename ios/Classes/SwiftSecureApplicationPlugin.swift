@@ -33,17 +33,22 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
 
                 var image : UIImage = UIImage(named:"splash")!
                 let bgImage = UIImageView(image: image)
-                bgImage.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
+                //bgImage.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
+
+
+                let widthRatio = bgImage.bounds.size.width / bgImage.image.size.width;
+                let heightRatio = bgImage.bounds.size.height / bgImage.image.size.height;
+                let scale = MIN(widthRatio, heightRatio);
+                let imageWidth = scale * bgImage.image.size.width;
+                let imageHeight = scale * bgImage.image.size.height;
+
+                bgImage.frame = CGRectMake(0, 0, resizedWidth, resizedHeight);
+                bgImage.center = bgImage.superview.center;
+
+
                 view.addSubview(bgImage)
 
-               /* let imageName = "splash_image"
-                print(imageName)
-                let image = UIImage(named: imageName)
-                print(image)
-                let imageView = UIImageView(image: image!)
 
-                imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
-                view.addSubview(imageView)*/
 
                 /* let gradient: CAGradientLayer = CAGradientLayer()
 
