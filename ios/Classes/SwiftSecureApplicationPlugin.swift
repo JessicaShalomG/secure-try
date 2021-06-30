@@ -30,15 +30,20 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                 let view = UIView(frame: window.frame)
                 view.tag = 99699
 
-                let imageName = "splash_image"
+
+                var image : UIImage = UIImage(named:"splash")!
+                let bgImage = UIImageView(image: image)
+                bgImage.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
+                view.addSubview(bgImage)
+
+               /* let imageName = "splash_image"
                 print(imageName)
                 let image = UIImage(named: imageName)
                 print(image)
                 let imageView = UIImageView(image: image!)
 
                 imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
-                view.addSubview(imageView)
-
+                view.addSubview(imageView)*/
 
                 /* let gradient: CAGradientLayer = CAGradientLayer()
 
