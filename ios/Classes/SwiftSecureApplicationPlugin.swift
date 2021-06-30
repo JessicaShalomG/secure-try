@@ -45,10 +45,10 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                  view.layer.insertSublayer(gradient, at: 0)
 
 
-                 let yourLabel = UILabel(frame: CGRect(x: 80, y: 200, width: 400, height: 500))
+                 let yourLabel = UILabel(frame: CGRect(x: 80, y: 200, width: 300, height: 500))
                    yourLabel.textColor = UIColor(red: 0.51, green: 0.56, blue: 0.73, alpha: 1.00)
                    //yourLabel.font = UIFont(name: "Roboto-Regular", size: 100)
-                    yourLabel.numberOfLines = 3
+                    yourLabel.numberOfLines = 5
                    //yourLabel.text = "CUENCA LA ÚNICA CUENTA QUE NECESITAS"
 
                 let paragraphStyle = NSMutableParagraphStyle()
