@@ -47,8 +47,8 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
 
                  let yourLabel = UILabel(frame: CGRect(x: 80, y: 200, width: 300, height: 500))
                    yourLabel.textColor = UIColor(red: 0.51, green: 0.56, blue: 0.73, alpha: 1.00)
-                   //yourLabel.font = UIFont(name: "Roboto-Regular", size: 100)
-                    yourLabel.numberOfLines = 5
+                   yourLabel.font = UIFont(name: "Roboto-Regular", size: 30.0)
+                   yourLabel.numberOfLines = 5
                    //yourLabel.text = "CUENCA LA ÚNICA CUENTA QUE NECESITAS"
 
                 let paragraphStyle = NSMutableParagraphStyle()
@@ -56,9 +56,9 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
 
                 let attributedString = NSMutableAttributedString(string: stringValue)
 
-                attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "Roboto-Regular", size: 30), range: NSRange(location: 0, length: stringValue.count))
+                //attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "Roboto-Regular", size: 30), range: NSRange(location: 0, length: stringValue.count))
 
-                //attributedString.addAttribute(NSAttributedString.Key.kern, value: 1.15, range: NSRange(location: 0, length: stringValue.count))
+                attributedString.addAttribute(NSAttributedString.Key.kern, value: 1.15, range: NSRange(location: 0, length: stringValue.count))
 
                 attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor(red: 0.00, green: 0.71, blue: 0.68, alpha: 1.00), range: NSRange(location:9,length:6))
 
