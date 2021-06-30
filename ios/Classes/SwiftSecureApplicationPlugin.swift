@@ -45,7 +45,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                  view.layer.insertSublayer(gradient, at: 0)
 
 
-                 let yourLabel = UILabel(frame: CGRect(x: 80, y: 250, width: 100, height: 500))
+                 let yourLabel = UILabel(frame: CGRect(x: 80, y: 200, width: 200, height: 500))
                    yourLabel.textColor = UIColor(red: 0.51, green: 0.56, blue: 0.73, alpha: 1.00)
                    yourLabel.font = UIFont(name: "Roboto-Bold", size: 100)
                     yourLabel.numberOfLines = 3
