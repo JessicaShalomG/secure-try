@@ -32,7 +32,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
 
                 var image : UIImage = UIImage(named:"splash")!
                 let coverImage = UIImageView(image: image)
-                coverImage.contentMode = .scaleAspectFit
+                coverImage.contentMode = .redraw
                 coverImage.frame = view.bounds
 
                 view.addSubview(coverImage)
