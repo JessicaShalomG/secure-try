@@ -47,7 +47,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
 
                  let yourLabel = UILabel(frame: CGRect(x: 80, y: 200, width: 400, height: 500))
                    yourLabel.textColor = UIColor(red: 0.51, green: 0.56, blue: 0.73, alpha: 1.00)
-                   yourLabel.font = UIFont(name: "Roboto-Regular", size: 100)
+                   //yourLabel.font = UIFont(name: "Roboto-Regular", size: 100)
                     yourLabel.numberOfLines = 3
                    //yourLabel.text = "CUENCA LA ÚNICA CUENTA QUE NECESITAS"
 
@@ -56,7 +56,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
 
                 let attributedString = NSMutableAttributedString(string: stringValue)
 
-               // attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "Roboto", size: 30.0), range: NSRange(location: 0, length: stringValue.count))
+                attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont(name: "Roboto-Regular", size: 30), range: NSRange(location: 0, length: stringValue.count))
 
                 //attributedString.addAttribute(NSAttributedString.Key.kern, value: 1.15, range: NSRange(location: 0, length: stringValue.count))
 
