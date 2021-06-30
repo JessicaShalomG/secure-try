@@ -39,6 +39,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
 
                 window.addSubview(view)
                 window.bringSubviewToFront(view)
+
             }
         }
     }
