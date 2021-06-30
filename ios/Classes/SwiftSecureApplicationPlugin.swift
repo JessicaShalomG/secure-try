@@ -30,7 +30,7 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                 let view = UIView(frame: window.frame)
                 view.tag = 99699
 
-                var image : UIImage = UIImage(named:"splash1")!
+                var image : UIImage = UIImage(named:"splash")!
                 let bgImage = UIImageView(image: image)
                 bgImage.frame = view.bounds
 
