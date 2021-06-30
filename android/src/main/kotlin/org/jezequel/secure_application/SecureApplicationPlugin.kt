@@ -81,7 +81,7 @@ public class SecureApplicationPlugin: FlutterPlugin, MethodCallHandler, Activity
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
     if (call.method == "secure") {
       activity?.window?.addFlags(LayoutParams.FLAG_SECURE)
-      activity?.window?.setBackgroundColor(Color.BLUE);
+      activity?.window?.setBackgroundColor(R.color.green);
       result.success(true)
     } else if (call.method == "open") {
       activity?.window?.clearFlags(LayoutParams.FLAG_SECURE)
