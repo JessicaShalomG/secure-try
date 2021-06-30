@@ -31,18 +31,18 @@ public class SwiftSecureApplicationPlugin: NSObject, FlutterPlugin {
                 view.tag = 99699
 
 
-                var image : UIImage = UIImage(named:"splash")!
+                var image : UIImage = UIImage(named:"AppIcon")!
                 let bgImage = UIImageView(image: image)
                 //bgImage.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
 
 
-               /* let widthRatio = view.bounds.size.width / bgImage.image.size.width;
+               /*let widthRatio = view.bounds.size.width / bgImage.image.size.width;
                 let heightRatio = view.bounds.size.height / bgImage.image.size.height;
                 let scale = MIN(widthRatio, heightRatio);
                 let imageWidth = scale * bgImage.image.size.width;
                 let imageHeight = scale * bgImage.image.size.height;*/
 
-                bgImage.frame = CGRect(x: 0, y: 0, width: view.bounds, height: view.bounds)
+                bgImage.frame = view.bounds
                 //bgImage.center = bgImage.superview.center;
 
 
